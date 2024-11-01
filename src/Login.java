@@ -1,5 +1,5 @@
 
-import dao.ConnectionProvider;
+import dbcon.ConnectionProvider;
 import javax.swing.JOptionPane;
 import java.sql.*;
 

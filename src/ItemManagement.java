@@ -1,5 +1,5 @@
 
-import dao.ConnectionProvider;
+import dbcon.ConnectionProvider;
 import java.awt.Color;
 import java.sql.*;
 import javax.swing.JOptionPane;
@@ -22,7 +22,7 @@ public class ItemManagement extends javax.swing.JFrame {
     public ItemManagement() {
         initComponents();
         setLocationRelativeTo(null);
-
+        itemTable.setRowHeight(40);
         showItemInfo(false);
     }
 
@@ -104,6 +104,7 @@ public class ItemManagement extends javax.swing.JFrame {
             }
         });
 
+        itemTable.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         itemTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -484,8 +485,8 @@ public class ItemManagement extends javax.swing.JFrame {
         // TODO add your handling code here:
         String productName = enterPName.getText();
         String expiryDate = enterEDate.getText();
-        // String productType = ept.getText();
-        Integer qtyToDelete = Integer.parseInt(enterQty.getText());
+//        String productType = ept.getText();
+//        Integer qtyToDelete = Integer.parseInt(enterQty.getText());
         PreparedStatement ps;
 
         try {

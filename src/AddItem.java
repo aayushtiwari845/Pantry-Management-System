@@ -1,7 +1,7 @@
 
 import java.sql.*;
 import javax.swing.JOptionPane;
-import dao.ConnectionProvider;
+import dbcon.ConnectionProvider;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
